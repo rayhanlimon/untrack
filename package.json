@@ -1,0 +1,12 @@
+{
+  "name": "untrack",
+  "version": "0.1.0",
+  "description": "Zero-dependency fixer for \".gitignore not working\": diagnose why ignored files are still tracked, preview and apply git rm --cached safely.",
+  "type": "module",
+  "bin": { "untrack": "./bin/untrack.js" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "keywords": ["git", "gitignore", "untrack", "dotenv", "secrets", "devtools", "cli", "nodejs"],
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "repository": { "type": "git", "url": "https://github.com/rayhanlimon/untrack.git" }
+}

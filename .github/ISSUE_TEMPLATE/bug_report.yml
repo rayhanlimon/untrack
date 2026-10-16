@@ -1,0 +1,12 @@
+---
+name: Bug report
+about: Wrong diagnosis or unsafe fix behavior
+title: "[bug] "
+labels: bug
+body:
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: OS, git version, command run, expected vs actual output
+---
