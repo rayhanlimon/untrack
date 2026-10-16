@@ -10,7 +10,7 @@ function git(args, cwd) {
     execFile("git", args, { cwd }, (e, so) => e ? reject(e) : resolve(String(so)));
   });
 }
-const TMPBASE = "/home/shadow/git/untrack/.test-tmp";
+const TMPBASE = process.env.RUNNER_TEMP || "/home/shadow/git/untrack/.test-tmp";
 async function mkRepo() {
   await fs.promises.mkdir(TMPBASE, { recursive: true });
   const d = await fs.promises.mkdtemp(path.join(TMPBASE, "ut-"));
